@@ -1,8 +1,13 @@
 n,m = map(int,input().split())
-busket = [0]*m
-for i+1 in range(n):
-    klist = list(map(int,input().split()))
-    for j in range(len(klist)):
-        busket[j] += 1
+count_list = [0]*m
+count = 0
+for i in range(n):
+    like_list = list(map(int,input().split()))
+    for f in like_list[1:]:
+        count_list[f-1] += 1
+for j in count_list:
+    if j == n:
+        count += 1
+print(count)
 
 
