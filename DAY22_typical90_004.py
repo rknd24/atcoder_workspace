@@ -12,10 +12,10 @@ for i in inputlist:
     for j in i:
         hsum += j
     hsumlist.append(hsum)
-for i in inputlist:
+for j in range(w):
     wsum = 0
-    for j in i:
-        wsum += j
+    for i in range(h):
+        wsum += inputlist[i][j]
     wsumlist.append(wsum)
 #演算過程
 bbiglist = []
@@ -23,7 +23,7 @@ for i in range(len(inputlist)):
     blist = []
     for j in range(len(inputlist[i])):
         b = 0
-        b = hsumlist[j] + wsumlist[j] - inputlist[i][j]
+        b = hsumlist[i] + wsumlist[j] - inputlist[i][j]
         blist.append(b) 
     bbiglist.append(blist)
 for i in range(len(bbiglist)):
