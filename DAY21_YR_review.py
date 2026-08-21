@@ -6,3 +6,4 @@ if ls[0].isdigit() and ls[1].isdigit() and s[a] == "-" and len(ls) == 2 and len(
     print("Yes")
 else:
     print("No")    
+print(ls)
