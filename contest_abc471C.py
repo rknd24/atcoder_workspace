@@ -6,6 +6,6 @@ diflist = [] #差分のリスト
 for i in alist:
     dif = i-now
     diflist.append(dif)
-diflist.sort(key=abs)
-print(diflist)
-count += diflist[0]
+diflist.sort(key=abs) #Webで調べた
+count += abs(diflist[0])
+now = diflist[0] #今回も累積和の類いかな

@@ -8,7 +8,6 @@ def function(s,balance):
         return
 
     function(s + "(",balance+1)
-
     if balance > 0:
         function(s + ")",balance-1)
 
